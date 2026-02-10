@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#video {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.controls button {
+    background-color: #b510c4;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #a905b8;
+}
+
+.controls button:active {
+    background-color: #940da0;
+}
+
+.controls label,
+.controls input[type="range"],
+.controls span {
+    vertical-align: middle;
+}
+
+.controls input[type="range"] {
+    margin: 0 10px;
+}
+
+.playlist {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.playlist p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.playlist input {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.playlist button {
+    background-color: #761edb;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.playlist button:hover {
+    background-color: #5700b9;
+}
+
+.playlist button:active {
+    background-color: #420a7e;
+}
