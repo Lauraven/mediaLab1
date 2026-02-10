@@ -1,5 +1,9 @@
 var player = videojs('video');
 
+window.addEventListener('DOMContentLoaded', function() {
+  loadURL2();
+});
+
 function playVideo() {
   player.play();
 }
@@ -21,22 +25,21 @@ function jumpBackward() {
   player.currentTime(player.currentTime() - 5);
 }
 
-function loadURL1() {
-  var url = document.getElementById('url1').value;
+function loadURL(url) {
   player.src({
     src: url,
     type: 'application/x-mpegURL'
   });
   player.load();
+  player.play();
+}
+
+function loadURL1() {
+  loadURL(document.getElementById("url1").value);
 }
 
 function loadURL2() {
-  var url = document.getElementById('url2').value;
-  player.src({
-    src: url,
-    type: 'application/x-mpegURL'
-  });
-  player.load();
+  loadURL(document.getElementById("url2").value);
 }
 
 function shuffleVideo() {
@@ -50,6 +53,7 @@ function shuffleVideo() {
     type: 'application/x-mpegURL'
   });
   player.load();
+  player.play();
 }
 
 function toggleMute() {
